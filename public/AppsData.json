@@ -1,0 +1,362 @@
+[
+  {
+    "image": "/src/assets/demo-app1.webp",
+    "title": "Forest: Focus For Productivity",
+    "companyName": "HERO.IO",
+    "id": 1,
+    "description": "Forest is an app helping you stay focused on your work and build healthy phone usage habits. Whenever you want to focus, plant a tree. Your tree will grow while you stay concentrated on your tasks. If you leave the app to check social media, your tree will wither. Grow a forest and become more productive!",
+    "size": 45.3,
+    "reviews": 892456,
+    "ratingAvg": 4.8,
+    "downloads": 12500000,
+    "ratings": [
+      { "name": "1 star", "count": 8924 },
+      { "name": "2 star", "count": 17848 },
+      { "name": "3 star", "count": 89245 },
+      { "name": "4 star", "count": 267735 },
+      { "name": "5 star", "count": 508704 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app2.webp",
+    "title": "SmPlan: ToDo List With Reminder",
+    "companyName": "HERO.IO",
+    "id": 2,
+    "description": "SmPlan is a simple and powerful task management app that helps you organize your daily tasks, set reminders, and boost your productivity. With an intuitive interface and smart notifications, you'll never miss an important deadline again. Perfect for personal and professional task management.",
+    "size": 68.2,
+    "reviews": 1245678,
+    "ratingAvg": 4.9,
+    "downloads": 18900000,
+    "ratings": [
+      { "name": "1 star", "count": 7562 },
+      { "name": "2 star", "count": 15124 },
+      { "name": "3 star", "count": 75623 },
+      { "name": "4 star", "count": 226870 },
+      { "name": "5 star", "count": 431055 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app3.webp",
+    "title": "FLIP - Focus Timer For Study",
+    "companyName": "HERO.IO",
+    "id": 3,
+    "description": "FLIP is a unique focus timer that helps students and professionals concentrate better. Place your phone face down and stay focused - flip it back up and lose your streak! Features Pomodoro timer, study statistics, and achievement badges to keep you motivated throughout your study sessions.",
+    "size": 22.8,
+    "reviews": 345890,
+    "ratingAvg": 4.3,
+    "downloads": 5600000,
+    "ratings": [
+      { "name": "1 star", "count": 6345 },
+      { "name": "2 star", "count": 19035 },
+      { "name": "3 star", "count": 63452 },
+      { "name": "4 star", "count": 190356 },
+      { "name": "5 star", "count": 355333 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app4.webp",
+    "title": "Pomocat - Cute Pomodoro Timer",
+    "companyName": "HERO.IO",
+    "id": 4,
+    "description": "Meet Pomocat, your adorable productivity companion! This kawaii Pomodoro timer features cute cats that cheer you on as you work. Customize your work sessions, take mindful breaks, and watch your productivity cat grow happier with each completed session. Perfect for cat lovers who want to stay focused!",
+    "size": 51.8,
+    "reviews": 2156789,
+    "ratingAvg": 4.9,
+    "downloads": 25000000,
+    "ratings": [
+      { "name": "1 star", "count": 2119 },
+      { "name": "2 star", "count": 4238 },
+      { "name": "3 star", "count": 42387 },
+      { "name": "4 star", "count": 127161 },
+      { "name": "5 star", "count": 247971 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app5.webp",
+    "title": "Time Planner: Schedule & Tasks",
+    "companyName": "HERO.IO",
+    "id": 5,
+    "description": "Time Planner is your ultimate scheduling assistant that combines calendar, tasks, and time tracking in one beautiful app. Visualize your day with time blocks, set goals, track habits, and analyze how you spend your time. Perfect for busy professionals and students who want to take control of their schedule.",
+    "size": 92.5,
+    "reviews": 456123,
+    "ratingAvg": 4.5,
+    "downloads": 7800000,
+    "ratings": [
+      { "name": "1 star", "count": 9812 },
+      { "name": "2 star", "count": 19624 },
+      { "name": "3 star", "count": 98123 },
+      { "name": "4 star", "count": 294369 },
+      { "name": "5 star", "count": 559306 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app6.webp",
+    "title": "Morning Habits - Daily Routine",
+    "companyName": "HERO.IO",
+    "id": 6,
+    "description": "Transform your mornings with Morning Habits! Build powerful morning routines, track your habits, and start each day with intention. Features guided meditation, journaling prompts, exercise routines, and customizable habit trackers. Join thousands who've revolutionized their mornings and boosted their productivity.",
+    "size": 35.6,
+    "reviews": 789456,
+    "ratingAvg": 4.6,
+    "downloads": 11200000,
+    "ratings": [
+      { "name": "1 star", "count": 5678 },
+      { "name": "2 star", "count": 11356 },
+      { "name": "3 star", "count": 56789 },
+      { "name": "4 star", "count": 170367 },
+      { "name": "5 star", "count": 323700 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app1.webp",
+    "title": "Focus Plant: Pomodoro Forest",
+    "companyName": "HERO.IO",
+    "id": 7,
+    "description": "Grow a beautiful virtual garden while staying focused! Focus Plant combines the Pomodoro Technique with gamification. Plant seeds when you start working, and watch them grow into beautiful flowers and trees as you stay focused. Unlock new plant species and create stunning gardens as rewards for your productivity.",
+    "size": 18.9,
+    "reviews": 234567,
+    "ratingAvg": 4.2,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 4456 },
+      { "name": "2 star", "count": 13367 },
+      { "name": "3 star", "count": 44567 },
+      { "name": "4 star", "count": 133703 },
+      { "name": "5 star", "count": 249585 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app2.webp",
+    "title": "Alarmy - Alarm Clock & Sleep",
+    "companyName": "HERO.IO",
+    "id": 8,
+    "description": "Say goodbye to snoozing! Alarmy is the world's most annoying alarm clock that guarantees you'll wake up. Complete missions like taking photos, solving math problems, or shaking your phone to turn off the alarm. Also includes sleep tracking, bedtime reminders, and gentle wake-up sounds for better sleep health.",
+    "size": 74.1,
+    "reviews": 1890345,
+    "ratingAvg": 4.7,
+    "downloads": 22000000,
+    "ratings": [
+      { "name": "1 star", "count": 24691 },
+      { "name": "2 star", "count": 37036 },
+      { "name": "3 star", "count": 123456 },
+      { "name": "4 star", "count": 370370 },
+      { "name": "5 star", "count": 679014 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app3.webp",
+    "title": "Focus Keeper: Time Management",
+    "companyName": "HERO.IO",
+    "id": 9,
+    "description": "Focus Keeper is a simple yet powerful time management app based on the Pomodoro Technique. Boost your productivity by breaking work into focused 25-minute sessions. Track your daily and weekly statistics, set custom goals, and see your productivity trends over time. Minimal design, maximum results!",
+    "size": 15.3,
+    "reviews": 567234,
+    "ratingAvg": 4.4,
+    "downloads": 8500000,
+    "ratings": [
+      { "name": "1 star", "count": 6913 },
+      { "name": "2 star", "count": 10370 },
+      { "name": "3 star", "count": 34567 },
+      { "name": "4 star", "count": 138271 },
+      { "name": "5 star", "count": 155557 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app4.webp",
+    "title": "Tide: Sleep Sounds & Focus",
+    "companyName": "HERO.IO",
+    "id": 10,
+    "description": "Tide brings you peace in the chaos. Relax with beautiful nature sounds, guided meditations, and focus timers. Whether you need to concentrate on work, fall asleep peacefully, or take a mindful break, Tide provides the perfect ambiance. Features white noise, rain sounds, ocean waves, and more.",
+    "size": 108.7,
+    "reviews": 1456789,
+    "ratingAvg": 4.8,
+    "downloads": 16700000,
+    "ratings": [
+      { "name": "1 star", "count": 6789 },
+      { "name": "2 star", "count": 13578 },
+      { "name": "3 star", "count": 67894 },
+      { "name": "4 star", "count": 203683 },
+      { "name": "5 star", "count": 387001 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app5.webp",
+    "title": "Habitica: Gamify Your Life",
+    "companyName": "HERO.IO",
+    "id": 11,
+    "description": "Turn your real life into a game with Habitica! This habit-building and productivity app treats your goals like a Role Playing Game. Level up as you complete tasks, unlock pets and equipment, and battle monsters with friends. Join a party, complete quests, and make productivity fun and rewarding!",
+    "size": 41.2,
+    "reviews": 623890,
+    "ratingAvg": 4.1,
+    "downloads": 4900000,
+    "ratings": [
+      { "name": "1 star", "count": 17846 },
+      { "name": "2 star", "count": 26769 },
+      { "name": "3 star", "count": 89234 },
+      { "name": "4 star", "count": 267703 },
+      { "name": "5 star", "count": 490793 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app6.webp",
+    "title": "TickTick: ToDo List & Reminder",
+    "companyName": "HERO.IO",
+    "id": 12,
+    "description": "TickTick is a powerful task management app that helps you organize everything in your life. Create tasks, set reminders, make lists, and collaborate with others. Features calendar view, Pomodoro timer, habit tracking, and smart date parsing. Sync seamlessly across all your devices and never forget important tasks again.",
+    "size": 55.9,
+    "reviews": 1678234,
+    "ratingAvg": 4.8,
+    "downloads": 20500000,
+    "ratings": [
+      { "name": "1 star", "count": 10456 },
+      { "name": "2 star", "count": 20913 },
+      { "name": "3 star", "count": 104567 },
+      { "name": "4 star", "count": 313701 },
+      { "name": "5 star", "count": 596041 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app1.webp",
+    "title": "Brain Focus Productivity Timer",
+    "companyName": "HERO.IO",
+    "id": 13,
+    "description": "Brain Focus helps you stay on task using the proven Pomodoro Technique. Minimize distractions, track your work sessions, and build better focus habits. Features detailed statistics, customizable work/break intervals, and notifications to keep you on track. Perfect for students, developers, and anyone who wants to maximize their productivity.",
+    "size": 29.4,
+    "reviews": 198765,
+    "ratingAvg": 3.9,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 4691 },
+      { "name": "2 star", "count": 7036 },
+      { "name": "3 star", "count": 23456 },
+      { "name": "4 star", "count": 93826 },
+      { "name": "5 star", "count": 105558 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app2.webp",
+    "title": "Loop Habit Tracker",
+    "companyName": "HERO.IO",
+    "id": 14,
+    "description": "Loop helps you create and maintain good habits. Simple, beautiful, and ad-free. Track your habits, see your progress with detailed graphs and statistics, and build streaks to stay motivated. Features flexible scheduling, reminders, and a clean interface that respects your privacy - all your data stays on your device.",
+    "size": 8.7,
+    "reviews": 987654,
+    "ratingAvg": 4.9,
+    "downloads": 14300000,
+    "ratings": [
+      { "name": "1 star", "count": 2283 },
+      { "name": "2 star", "count": 4567 },
+      { "name": "3 star", "count": 45678 },
+      { "name": "4 star", "count": 137035 },
+      { "name": "5 star", "count": 267226 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app3.webp",
+    "title": "Freedom: Block Distractions",
+    "companyName": "HERO.IO",
+    "id": 15,
+    "description": "Freedom blocks distracting websites and apps so you can focus on what matters. Schedule recurring block sessions, create custom blocklists, and sync across all your devices. Whether you're trying to focus on work, reduce screen time, or sleep better, Freedom helps you take back control of your digital life.",
+    "size": 81.3,
+    "reviews": 1123456,
+    "ratingAvg": 4.6,
+    "downloads": 13400000,
+    "ratings": [
+      { "name": "1 star", "count": 11357 },
+      { "name": "2 star", "count": 17036 },
+      { "name": "3 star", "count": 56789 },
+      { "name": "4 star", "count": 170367 },
+      { "name": "5 star", "count": 312342 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app4.webp",
+    "title": "Streaks: Habit Tracker",
+    "companyName": "HERO.IO",
+    "id": 16,
+    "description": "Streaks is the to-do list that helps you form good habits. Create up to 12 tasks you want to complete each day, and build a streak of consecutive days. Integrates with Apple Health to automatically track health-related tasks. Beautiful design, powerful features, and the motivation you need to build lasting habits.",
+    "size": 27.6,
+    "reviews": 512345,
+    "ratingAvg": 4.5,
+    "downloads": 9800000,
+    "ratings": [
+      { "name": "1 star", "count": 3894 },
+      { "name": "2 star", "count": 7789 },
+      { "name": "3 star", "count": 38945 },
+      { "name": "4 star", "count": 116836 },
+      { "name": "5 star", "count": 221992 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app5.webp",
+    "title": "Focus To-Do: Pomodoro & Tasks",
+    "companyName": "HERO.IO",
+    "id": 17,
+    "description": "Focus To-Do combines Pomodoro Timer with Task Management. It helps you stay focused on tasks and get more things done. Features include Pomodoro timer, task organizer, reminders, recurring tasks, and detailed reports. Sync across devices and track your productivity with comprehensive statistics and charts.",
+    "size": 64.5,
+    "reviews": 834567,
+    "ratingAvg": 4.3,
+    "downloads": 6700000,
+    "ratings": [
+      { "name": "1 star", "count": 14469 },
+      { "name": "2 star", "count": 21703 },
+      { "name": "3 star", "count": 72345 },
+      { "name": "4 star", "count": 217036 },
+      { "name": "5 star", "count": 397903 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app6.webp",
+    "title": "Minimal: Minimalist Pomodoro",
+    "companyName": "HERO.IO",
+    "id": 18,
+    "description": "Minimal is a beautifully simple Pomodoro timer with a focus on minimalism and ease of use. No complicated features, just a clean timer to help you focus. Customize work and break durations, track your completed sessions, and enjoy a distraction-free interface. Perfect for those who appreciate simplicity and effectiveness.",
+    "size": 5.2,
+    "reviews": 156789,
+    "ratingAvg": 4.7,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 1789 },
+      { "name": "2 star", "count": 3578 },
+      { "name": "3 star", "count": 17893 },
+      { "name": "4 star", "count": 53680 },
+      { "name": "5 star", "count": 101994 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app1.webp",
+    "title": "Be Focused: Focus Timer",
+    "companyName": "HERO.IO",
+    "id": 19,
+    "description": "Be Focused helps you stay on task and be more productive using the Pomodoro Technique. Create tasks, configure breaks and goals, and track your progress throughout the day, week, or custom period. Features detailed reports, iCloud sync, and customizable work/break intervals to match your workflow perfectly.",
+    "size": 33.8,
+    "reviews": 678901,
+    "ratingAvg": 4.4,
+    "downloads": 10900000,
+    "ratings": [
+      { "name": "1 star", "count": 6249 },
+      { "name": "2 star", "count": 9373 },
+      { "name": "3 star", "count": 31245 },
+      { "name": "4 star", "count": 124982 },
+      { "name": "5 star", "count": 140607 }
+    ]
+  },
+  {
+    "image": "/src/assets/demo-app2.webp",
+    "title": "Productive: Habit Tracker",
+    "companyName": "HERO.IO",
+    "id": 20,
+    "description": "Productive is a free habit tracker that helps you build a routine of positive, life-changing habits. Set personal goals, track your progress, and get motivated with streaks. Features smart reminders, beautiful statistics, customizable habits, and the ability to schedule habits for specific days. Your personal motivation coach in your pocket!",
+    "size": 48.1,
+    "reviews": 1567890,
+    "ratingAvg": 4.8,
+    "downloads": 19200000,
+    "ratings": [
+      { "name": "1 star", "count": 9345 },
+      { "name": "2 star", "count": 18691 },
+      { "name": "3 star", "count": 93456 },
+      { "name": "4 star", "count": 280369 },
+      { "name": "5 star", "count": 532706 }
+    ]
+  }
+]
