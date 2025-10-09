@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useAppsData from "../Hooks/useAppsData";
 import Card from "../Components/Card";
 import demoApp1 from "../assets/demo-app1.webp";
@@ -13,6 +13,7 @@ import appError from "../assets/App-Error.png";
 const AllApps = () => {
   const { products, loading } = useAppsData();
   const [searchTerm, setSearchTerm] = useState("");
+  const [isSearching, setIsSearching] = useState(false);
 
   // Image mapping
   const imageMap = {
@@ -43,6 +44,20 @@ const AllApps = () => {
   const filteredApps = allApps.filter((app) =>
     app.title.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  // Debounced search loading effect
+  useEffect(() => {
+    if (searchTerm) {
+      setIsSearching(true);
+      const timer = setTimeout(() => {
+        setIsSearching(false);
+      }, 300); // 300ms debounce delay
+      
+      return () => clearTimeout(timer);
+    } else {
+      setIsSearching(false);
+    }
+  }, [searchTerm]);
 
   if (loading) {
     return (
@@ -88,13 +103,25 @@ const AllApps = () => {
                 placeholder="Search Apps"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full sm:w-64 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
+                className="w-full sm:w-64 px-4 py-2 pr-10 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent"
               />
+              {isSearching && (
+                <div className="absolute right-3 top-1/2 transform -translate-y-1/2">
+                  <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-purple-600"></div>
+                </div>
+              )}
             </div>
           </div>
 
           {/* Apps Grid */}
-          {filteredApps.length > 0 ? (
+          {isSearching ? (
+            <div className="flex items-center justify-center py-20">
+              <div className="text-center">
+                <div className="animate-spin rounded-full h-12 w-12 border-b-4 border-purple-600 mx-auto mb-3"></div>
+                <p className="text-gray-600 font-semibold">Searching apps...</p>
+              </div>
+            </div>
+          ) : filteredApps.length > 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
               {filteredApps.map((app) => (
                 <Card
