@@ -5,17 +5,17 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="bg-[#071D2D] text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
         {/* Top row: brand left, social right */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoPng} alt="Hero.IO Logo" className="h-5 sm:h-6 w-auto" />
-            <span className="text-white font-semibold tracking-wide text-base sm:text-lg">HERO.IO</span>
+            <img src={logoPng} alt="Hero.IO Logo" className="h-5 w-auto" />
+            <span className="text-white font-semibold tracking-wide text-sm sm:text-base">HERO.IO</span>
           </Link>
 
           <div className="text-center sm:text-right">
-            <h6 className="text-base sm:text-lg font-medium mb-2 sm:mb-0">Social Links</h6>
-            <div className="mt-2 sm:mt-3 flex items-center justify-center sm:justify-end gap-2 sm:gap-3">
+            <h6 className="text-sm sm:text-base font-medium mb-1 sm:mb-0">Social Links</h6>
+            <div className="mt-1 sm:mt-2 flex items-center justify-center sm:justify-end gap-2">
               {/* X / Twitter */}
               <a
                 href="#"
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="my-4 sm:my-6 border-t border-white/20" />
+        <div className="my-3 sm:my-4 border-t border-white/20" />
 
         {/* Bottom copyright */}
         <p className="text-center text-xs sm:text-sm text-white/80">
