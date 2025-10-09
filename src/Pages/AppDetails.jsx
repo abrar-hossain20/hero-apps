@@ -82,22 +82,31 @@ const AppDetails = () => {
 
     if (loading) {
         return (
-            <div className="min-h-screen flex items-center justify-center">
-                <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div>
+            <div className="min-h-screen flex items-center justify-center bg-gray-50">
+                <div className="text-center">
+                    <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-purple-600 mx-auto mb-4"></div>
+                    <p className="text-gray-600 text-lg font-semibold">Loading app details...</p>
+                </div>
             </div>
         );
     }
 
     if (!app) {
         return (
-            <div className="min-h-screen flex flex-col items-center justify-center">
-                <h1 className="text-3xl font-bold text-gray-900 mb-4">App Not Found</h1>
-                <button
-                    onClick={() => navigate('/apps')}
-                    className="px-6 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700"
-                >
-                    Back to Apps
-                </button>
+            <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 px-4">
+                <div className="text-center">
+                    <svg className="w-24 h-24 mx-auto text-gray-300 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">App Not Found</h1>
+                    <p className="text-lg text-gray-600 mb-8">The app you are looking for does not exist or has been removed.</p>
+                    <button
+                        onClick={() => navigate('/apps')}
+                        className="px-8 py-3 bg-purple-600 text-white font-semibold rounded-lg hover:bg-purple-700 transition-colors duration-200"
+                    >
+                        Browse All Apps
+                    </button>
+                </div>
             </div>
         );
     }

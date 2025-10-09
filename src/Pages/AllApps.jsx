@@ -7,6 +7,8 @@ import demoApp3 from "../assets/demo-app3.webp";
 import demoApp4 from "../assets/demo-app4.webp";
 import demoApp5 from "../assets/demo-app5.webp";
 import demoApp6 from "../assets/demo-app6.webp";
+import appError from "../assets/App-Error.png";
+
 
 const AllApps = () => {
   const { products, loading } = useAppsData();
@@ -44,8 +46,11 @@ const AllApps = () => {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-purple-600"></div>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-16 w-16 border-b-4 border-purple-600 mx-auto mb-4"></div>
+          <p className="text-gray-600 text-lg font-semibold">Loading apps...</p>
+        </div>
       </div>
     );
   }
@@ -104,6 +109,9 @@ const AllApps = () => {
             </div>
           ) : (
             <div className="text-center py-16">
+              <div className="">
+                <img src={appError} alt="App Not Found" className="mx-auto mb-4" />
+              </div>
               <p className="text-2xl font-bold text-gray-500">
                 No apps found matching "{searchTerm}"
               </p>
