@@ -1,5 +1,4 @@
-
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import useAppsData from '../Hooks/useAppsData';
@@ -30,6 +29,13 @@ const AppDetails = () => {
         '/src/assets/demo-app6.webp': demoApp6,
     };
 
+    // Check if app is already installed on component mount
+    useEffect(() => {
+        const installedApps = JSON.parse(localStorage.getItem('installedApps') || '[]');
+        const appInstalled = installedApps.some(app => app.id === parseInt(id));
+        setIsInstalled(appInstalled);
+    }, [id]);
+
     // Format downloads function
     const formatDownloads = (downloads) => {
         if (downloads >= 1000000) {
@@ -50,6 +56,14 @@ const AppDetails = () => {
     const app = products.find(app => app.id === parseInt(id));
 
     const handleInstall = () => {
+        if (isInstalled) {
+            toast.info('App is already installed!', {
+                position: 'top-center',
+                autoClose: 2000,
+            });
+            return;
+        }
+
         setIsInstalled(true);
         
         // Save to localStorage
@@ -63,14 +77,10 @@ const AppDetails = () => {
             size: app.size
         };
         
-        // Check if app is already installed
-        const isAlreadyInstalled = installedApps.some(installed => installed.id === app.id);
-        if (!isAlreadyInstalled) {
-            installedApps.push(appToInstall);
-            localStorage.setItem('installedApps', JSON.stringify(installedApps));
-        }
+        installedApps.push(appToInstall);
+        localStorage.setItem('installedApps', JSON.stringify(installedApps));
         
-        toast.success('App installed successfully!', {
+        toast.success('🎉 App installed successfully!', {
             position: 'top-center',
             autoClose: 3000,
             hideProgressBar: false,

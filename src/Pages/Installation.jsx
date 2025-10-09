@@ -40,14 +40,18 @@ const Installation = () => {
   };
 
   // Handle uninstall
-  const handleUninstall = (appId) => {
+  const handleUninstall = (appId, appTitle) => {
     const updatedApps = installedApps.filter((app) => app.id !== appId);
     setInstalledApps(updatedApps);
     localStorage.setItem("installedApps", JSON.stringify(updatedApps));
 
-    toast.success("App uninstalled successfully!", {
+    toast.success(`"${appTitle}" has been uninstalled successfully!`, {
       position: "top-center",
       autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
     });
   };
 
@@ -56,12 +60,14 @@ const Installation = () => {
     let sorted = [...installedApps];
 
     switch (sortBy) {
+      case "downloads-high-low":
+        return sorted.sort((a, b) => b.downloads - a.downloads);
+      case "downloads-low-high":
+        return sorted.sort((a, b) => a.downloads - b.downloads);
       case "size":
         return sorted.sort((a, b) => b.size - a.size);
       case "rating":
         return sorted.sort((a, b) => b.ratingAvg - a.ratingAvg);
-      case "downloads":
-        return sorted.sort((a, b) => b.downloads - a.downloads);
       default:
         return sorted;
     }
@@ -93,12 +99,13 @@ const Installation = () => {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="w-full sm:w-48 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none bg-white cursor-pointer"
+              className="w-full sm:w-56 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent appearance-none bg-white cursor-pointer text-sm font-medium text-gray-700"
             >
-              <option value="default">Sort By Size</option>
+              <option value="default">Sort By Downloads</option>
+              <option value="downloads-high-low">Downloads (High-Low)</option>
+              <option value="downloads-low-high">Downloads (Low-High)</option>
               <option value="size">Size (Largest First)</option>
               <option value="rating">Rating (Highest First)</option>
-              <option value="downloads">Downloads (Most First)</option>
             </select>
             <svg
               className="absolute right-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none"
@@ -169,7 +176,7 @@ const Installation = () => {
 
                   {/* Right Side - Uninstall Button */}
                   <button
-                    onClick={() => handleUninstall(app.id)}
+                    onClick={() => handleUninstall(app.id, app.title)}
                     className="w-full sm:w-auto px-6 py-2 bg-green-500 hover:bg-green-600 text-white font-semibold rounded transition-colors duration-200"
                   >
                     Uninstall
@@ -180,19 +187,7 @@ const Installation = () => {
           </div>
         ) : (
           <div className="text-center py-16 bg-white rounded-2xl shadow-md">
-            <svg
-              className="w-20 h-20 mx-auto text-gray-300 mb-4"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
-              />
-            </svg>
+            
             <h3 className="text-2xl font-bold text-gray-900 mb-2">
               No Installed Apps
             </h3>
