@@ -51,6 +51,25 @@ const AppDetails = () => {
 
     const handleInstall = () => {
         setIsInstalled(true);
+        
+        // Save to localStorage
+        const installedApps = JSON.parse(localStorage.getItem('installedApps') || '[]');
+        const appToInstall = {
+            id: app.id,
+            title: app.title,
+            image: app.image,
+            downloads: app.downloads,
+            ratingAvg: app.ratingAvg,
+            size: app.size
+        };
+        
+        // Check if app is already installed
+        const isAlreadyInstalled = installedApps.some(installed => installed.id === app.id);
+        if (!isAlreadyInstalled) {
+            installedApps.push(appToInstall);
+            localStorage.setItem('installedApps', JSON.stringify(installedApps));
+        }
+        
         toast.success('App installed successfully!', {
             position: 'top-center',
             autoClose: 3000,
