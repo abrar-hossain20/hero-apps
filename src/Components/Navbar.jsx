@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link, NavLink } from "react-router";
 
 import logoPng from "../assets/logo.png";
 const Navbar = () => {
@@ -32,13 +32,28 @@ const Navbar = () => {
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow-lg border border-base-300"
           >
             <li>
-              <Link to="/">Home</Link>
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => isActive ? "text-purple-600 font-bold" : ""}
+              >
+                Home
+              </NavLink>
             </li>
             <li>
-              <Link to="/apps">Apps</Link>
+              <NavLink 
+                to="/apps" 
+                className={({ isActive }) => isActive ? "text-purple-600 font-bold" : ""}
+              >
+                Apps
+              </NavLink>
             </li>
             <li>
-              <Link to="/installation">Installation</Link>
+              <NavLink 
+                to="/installation" 
+                className={({ isActive }) => isActive ? "text-purple-600 font-bold" : ""}
+              >
+                Installation
+              </NavLink>
             </li>
           </ul>
         </div>
@@ -67,19 +82,34 @@ const Navbar = () => {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 gap-1">
           <li>
-            <Link to="/" className="px-3 py-2 text-xl font-bold">
+            <NavLink 
+              to="/" 
+              className={({ isActive }) => 
+                `px-3 py-2 text-xl font-bold ${isActive ? 'text-purple-600' : ''}`
+              }
+            >
               Home
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/apps" className="px-3 py-2 text-xl font-bold">
+            <NavLink 
+              to="/apps" 
+              className={({ isActive }) => 
+                `px-3 py-2 text-xl font-bold ${isActive ? 'text-purple-600' : ''}`
+              }
+            >
               Apps
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to="/installation" className="px-3 py-2 text-xl font-bold">
+            <NavLink 
+              to="/installation" 
+              className={({ isActive }) => 
+                `px-3 py-2 text-xl font-bold ${isActive ? 'text-purple-600' : ''}`
+              }
+            >
               Installation
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </div>
