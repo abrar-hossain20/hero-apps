@@ -1,16 +1,45 @@
-# React + Vite
+# Hero.IO - Productivity Apps Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern web application showcasing productivity apps where users can browse, search, install, and manage their favorite productivity tools.
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Hero.IO is a platform that displays a collection of productivity applications. Users can explore different apps, view detailed information with ratings charts, search through the catalog, and install apps they like. The app uses local storage to keep track of installed apps, and users can sort and manage their installations easily.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **React** - Frontend library for building the UI
+- **React Router** - For page navigation and routing
+- **Tailwind CSS** - Styling framework
+- **DaisyUI** - UI component library
+- **Recharts** - For displaying rating charts
+- **React Toastify** - Toast notifications
+- **Axios** - For fetching app data
+- **Vite** - Build tool and dev server
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse 20+ productivity apps
+- Search apps by name
+- View detailed app information with rating charts
+- Install and uninstall apps
+- Sort installed apps by downloads, size, or rating
+- Responsive design for all devices
+- Loading animations for smooth user experience
+
+## Getting Started
+
+```bash
+# Install dependencies
+npm install
+
+# Run development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## Live Demo
+
+Visit the live application to explore all features!
