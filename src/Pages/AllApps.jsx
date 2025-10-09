@@ -104,7 +104,7 @@ const AllApps = () => {
             </div>
           ) : (
             <div className="text-center py-16">
-              <p className="text-xl text-gray-500">
+              <p className="text-2xl font-bold text-gray-500">
                 No apps found matching "{searchTerm}"
               </p>
             </div>
