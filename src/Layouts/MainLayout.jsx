@@ -4,9 +4,11 @@ import Navbar from "../Components/Navbar";
 
 const MainLayout = () => {
     return (
-        <div>
+        <div className="min-h-screen flex flex-col">
             <Navbar />
-            <Outlet />
+            <main className="flex-grow">
+                <Outlet />
+            </main>
             <Footer />
         </div>
     );

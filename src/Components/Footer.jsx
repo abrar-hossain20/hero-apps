@@ -5,17 +5,17 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="bg-[#071D2D] text-white">
-      <div className="max-w-7xl mx-auto px-4 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         {/* Top row: brand left, social right */}
-        <div className="flex items-center justify-between gap-6">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
           <Link to="/" className="flex items-center gap-2">
-            <img src={logoPng} alt="Hero.IO Logo" className="h-6 w-auto" />
-            <span className="text-white font-semibold tracking-wide">HERO.IO</span>
+            <img src={logoPng} alt="Hero.IO Logo" className="h-5 sm:h-6 w-auto" />
+            <span className="text-white font-semibold tracking-wide text-base sm:text-lg">HERO.IO</span>
           </Link>
 
-          <div className="text-right">
-            <h6 className="text-lg font-medium">Social Links</h6>
-            <div className="mt-3 flex items-center justify-end gap-3">
+          <div className="text-center sm:text-right">
+            <h6 className="text-base sm:text-lg font-medium mb-2 sm:mb-0">Social Links</h6>
+            <div className="mt-2 sm:mt-3 flex items-center justify-center sm:justify-end gap-2 sm:gap-3">
               {/* X / Twitter */}
               <a
                 href="#"
@@ -68,10 +68,10 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="my-4 border-t border-white/20" />
+        <div className="my-4 sm:my-6 border-t border-white/20" />
 
         {/* Bottom copyright */}
-        <p className="text-center text-sm text-white/80">
+        <p className="text-center text-xs sm:text-sm text-white/80">
           Copyright © {year} - All right reserved
         </p>
       </div>
