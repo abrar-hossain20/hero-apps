@@ -42,4 +42,4 @@ npm run build
 
 ## Live Demo
 
-[Click me to explore all features!](https://abrarhossain-20-hero-apps.netlify.app/)
+https://abrarhossain-20-hero-apps.netlify.app/
